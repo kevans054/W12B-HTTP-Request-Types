@@ -1,0 +1,29 @@
+label {
+  display: block;
+  margin-left: 170px;
+}
+
+input {
+  margin-left: 170px;
+  width: 70%;
+  height: auto;
+}
+
+textarea {
+  margin-left: 170px;
+  width: 70%;
+  height: auto;
+}
+
+h1 {
+  margin-left: 170px;
+}
+
+.alert {
+  display: none;
+}
+
+.show-alert {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
