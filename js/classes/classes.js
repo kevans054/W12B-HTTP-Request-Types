@@ -1,4 +1,6 @@
-
+// Assignment W12B
+// Karen Evans
+// December 8, 2020
 
 class GetTweet {
 
