@@ -8,7 +8,6 @@ function sendTweet() {
     let tweetTitle = document.getElementById('title-input');
     let tweetBody = document.getElementById('body-input');
 
-
     let tweetData = {
 
         title: tweetTitle,
@@ -17,7 +16,6 @@ function sendTweet() {
     }
 
     // ajax to send request
-
     let ajax = new XMLHttpRequest();
 
     ajax.onreadystatechange = function() {
@@ -41,9 +39,27 @@ let tweetButton = document.getElementById('tweet-submit');
 tweetButton.addEventListener('click', sendTweet);
 
 
+function UpdateTweet(updatedData) {
+// Update request
 
+    console.log('UpdateTweet');
+    
+    let tweetData = updatedData;
 
-// Assignment W12B
-// Karen Evans
-// December 8, 2020
-// update
+    // ajax to send request
+    let ajax = new XMLHttpRequest();
+
+    ajax.onreadystatechange = function() {
+        // status 201 = created
+        if(this.readyState == 4 && this.status == 200){
+       
+            alert('tweet updated');
+            
+        }
+    };
+// fake environment for tweeting
+    ajax.open('PATCH', 'https://jsonplaceholder.typicode.com/posts/1',true);
+    // ajax.setRequestHeader("Content-Type", "application/json");
+    ajax.send(JSON.stringify(tweetData));
+}
+

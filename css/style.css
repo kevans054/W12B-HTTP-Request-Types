@@ -6,13 +6,12 @@ label {
 input {
   margin-left: 170px;
   width: 70%;
-  height: auto;
 }
 
 textarea {
   margin-left: 170px;
   width: 70%;
-  height: auto;
+  height: 150px;
 }
 
 h1 {
